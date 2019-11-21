@@ -1,0 +1,9 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Python FizzBuzz program generator",
+  "main": "dist/index.js",
+  "repository": "https://github.com/kuskoman/FizzBuzz/generator",
+  "author": "kkm",
+  "license": "MIT"
+}

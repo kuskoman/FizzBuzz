@@ -3,7 +3,7 @@
 I've read that a lot of people applying for junior positions
 very often recive a task to write a FizzBuzz. Since it may be
 problematic for some people, I did it for you. Here is, The Ultimate
-FizzBuzz application, working for numbers from 0 to 9999.
+FizzBuzz application, working for numbers from 1 to 9999.
 
 Some haters may say, that it is not useful, since you can not
 use internet when resolving this task. It may be true, however

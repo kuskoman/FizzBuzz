@@ -6,28 +6,22 @@ export const createFileWithTemplate = (filePath: string): void => {
   writeFileSync(filePath, startTemplate)
 }
 
-export const generateTheGreatIfWall = (range: number): string => {
-    let theGreatIfWall = '\n'
-    let i = 0
-    while (i < range) {
-        theGreatIfWall += `  if(number == ${i}):\n    return('${fizzBuzz(i)}')\n`
-        i += 1
+export const generateTheGreatIfWall = (n: number): string => {
+    const TheGreatIfString = `  if(number == ${n}):\n    return('${fizzBuzz(n)}')\n`
+    if (n > 0) {
+        return generateTheGreatIfWall(n - 1) + TheGreatIfString
+    } else {
+        return TheGreatIfString
     }
-
-    return theGreatIfWall
 }
 
-export const generateTheGreatPrintWall = (range: number): string => {
-  let theGreatNumberWall = ''
-
-  let i = 0
-  while (i < range) {
-      theGreatNumberWall += `print(checkNumber(${i}))\n`
-
-      i += 1
-  }
-
-  return theGreatNumberWall
+export const generateTheGreatPrintWall = (n: number): string => {
+    const TheGreatPrintString = `print(checkNumber(${n}))\n`
+    if (n > 0) {
+        return generateTheGreatPrintWall(n - 1) + TheGreatPrintString
+    } else {
+        return TheGreatPrintString
+    }
 }
 
 const fizzBuzz = (number: number): string => {

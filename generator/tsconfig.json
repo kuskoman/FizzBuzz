@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["esnext", "es2017", "es2015"],
+    "module": "commonjs",
+    "declaration": false,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "removeComments": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
+  

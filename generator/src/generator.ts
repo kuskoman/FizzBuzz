@@ -8,7 +8,7 @@ export const createFileWithTemplate = (filePath: string): void => {
 
 export const generateTheGreatIfWall = (n: number): string => {
     const TheGreatIfString = `  if(number == ${n}):\n    return('${fizzBuzz(n)}')\n`
-    if (n > 0) {
+    if (n > 1) {
         return generateTheGreatIfWall(n - 1) + TheGreatIfString
     } else {
         return TheGreatIfString
@@ -17,7 +17,7 @@ export const generateTheGreatIfWall = (n: number): string => {
 
 export const generateTheGreatPrintWall = (n: number): string => {
     const TheGreatPrintString = `print(checkNumber(${n}))\n`
-    if (n > 0) {
+    if (n > 1) {
         return generateTheGreatPrintWall(n - 1) + TheGreatPrintString
     } else {
         return TheGreatPrintString

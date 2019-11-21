@@ -1,6 +1,4 @@
 def checkNumber(number):
-  if(number == 0):
-    return('FizzBuzz')
   if(number == 1):
     return('1')
   if(number == 2):
@@ -20000,7 +19998,6 @@ def checkNumber(number):
   if(number == 9999):
     return('Fizz')
 
-print(checkNumber(0))
 print(checkNumber(1))
 print(checkNumber(2))
 print(checkNumber(3))

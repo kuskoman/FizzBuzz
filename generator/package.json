@@ -1,0 +1,19 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Python FizzBuzz program generator",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "repository": "https://github.com/kuskoman/FizzBuzz/generator",
+  "author": "kkm",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.11"
+  },
+  "dependencies": {
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}
